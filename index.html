@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Star Wars RPG</title>
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+	
+	<link href="https://fonts.googleapis.com/css?family=Lekton:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poller+One&display=swap" rel="stylesheet">
+
+</head>
+<body style="background-image: url('assets/images/falcon.jpg'); background-size: cover; ">
+    <div class="container">
+		<div class = "row">
+			<div class = "col-6">
+                <h1>Star Wars RPG!</h1> 
+			</div>
+
+			<div class = "col-6">
+                <h1>"Go See a Star War"</h1>
+			
+			
+			</div>
+		</div>
+
+		<div class = "row" id = "picRow" style = "margin-left: 22px;">
+			<div class = "col-2 firstRow _0 " id = "hunt" value = "Huntress">
+                <!-- Char 1: Darth Cognus -->
+			    <p class = "name nameh r0" value = "0">Darth Cognus</p>
+			    <img src="assets/images/Darthcog.jpg" id = "imageh" height=150px><br>
+			    <p class = "HP hunthp Huntress r0"></p>
+			</div>
+
+			<div class = "col-2 firstRow _1 " id = "johun" value = "Johun">
+                <!-- Char 2: Johun Othone -->
+			    <p class = "name namej 1" value = "1">Johun Othone</p>
+			    <img src="assets/images/Johun_Othone.jpg" id = "imagej" height=150px><br>
+			    <p class = "HP johunhp Johun 1"></p>
+			</div>
+
+			<div class = "col-2 firstRow _2 " id = "zannah" value = "Zannah">
+                <!-- Char 3: Darth Zannah -->
+			    <p class = "name namez 2" value = "2">Darth Zannah</p>
+			    <img src="assets/images/Darth_Zannah.jpg" id = "imagez" height=150px><br>
+			    <p class = "HP zannahhp Zannah 2"></p>
+			</div>
+
+			<div class = "col-2 firstRow _3 " id = "darthb" value = "DarBane">
+                <!-- Char 4: Darth Bane -->
+			    <p class = "name named 3" value = "3">Darth Bane</p>
+			    <img src="assets/images/DarthBane.jpg" id = "imaged" height=150px><br>
+			    <p class = "HP darthbhp DarBane 3"></p>
+			</div>
+		</div>
+
+		
+
+	
+		<div class = "row pl-5">
+            <div class = "col-3" id = "yourChar">
+                    <p>Your Character:</p> 
+            </div>
+            <div class="col-6">
+                    <button class="attackButton" style="font-size: 20px; font-family: 'Lekton', sans-serif;">Attack</button>  
+                    <button class="restart" style="font-size: 20px; font-family: 'Lekton', sans-serif;">Restart</button>
+                    <br>
+                    <p class = "youAttacked"></p>
+                    <p class = "attackedBack"></p>
+                    <p class = "youDefeated"></p>
+                    <p class = "winLose"></p>
+                    <p class = "noEnemy"></p>  
+                   
+            </div>
+            <div class="col-3" id="defender">
+                    <p>Enemy:</p>
+            </div>
+		</div>
+            
+
+		<div class = "row avail pl-5">
+            <p>Enemies Remaining: </p>
+			<div class = "col-2 move"  id = "enemies1"></div>
+			<div class = "col-2 move"  id = "enemies0"></div>
+			<div class = "col-2 move"  id = "enemies2"></div>
+			<div class = "col-2 move"  id = "enemies3"></div>
+		</div>
+
+    </div>
+		
+</body>
+<script type="text/javascript" src = "assets/javascript/game.js"></script>
+</html>
