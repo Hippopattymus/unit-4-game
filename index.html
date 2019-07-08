@@ -3,8 +3,9 @@
 <head>
 	<title>Star Wars RPG</title>
 	
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -17,18 +18,19 @@
 <body style="background-image: url('assets/images/falcon.jpg'); background-size: cover; ">
     <div class="container">
 		<div class = "row">
-			<div class = "col-6">
-                <h1>Star Wars RPG!</h1> 
+			<div class = "col-4">
+                <h1 style="font-family: 'Lekton', serif;">Star Wars RPG!</h1> 
 			</div>
 
-			<div class = "col-6">
-                <h1>"Go See a Star War"</h1>
+			<div class = "col-8 pt-3">
+				<p style="font-family: 'Lekton', serif;">"Do or do not, there is no try."</p>
+				
 			
 			
 			</div>
 		</div>
 
-		<div class = "row" id = "picRow" style = "margin-left: 22px;">
+		<div class = "row pt-3" id = "picRow" style = "margin-left: 22px;">
 			<div class = "col-2 firstRow _0 " id = "hunt" value = "Huntress">
                 <!-- Char 1: Darth Cognus -->
 			    <p class = "name nameh r0" value = "0">Darth Cognus</p>
@@ -61,7 +63,7 @@
 		
 
 	
-		<div class = "row pl-5">
+		<div class = "row pl-5 pt-3">
             <div class = "col-3" id = "yourChar">
                     <p>Your Character:</p> 
             </div>
@@ -69,7 +71,7 @@
                     <button class="attackButton" style="font-size: 20px; font-family: 'Lekton', sans-serif;">Attack</button>  
                     <button class="restart" style="font-size: 20px; font-family: 'Lekton', sans-serif;">Restart</button>
                     <br>
-                    <p class = "youAttacked"></p>
+                    <p class = "youAttacked pt-2"></p>
                     <p class = "attackedBack"></p>
                     <p class = "youDefeated"></p>
                     <p class = "winLose"></p>

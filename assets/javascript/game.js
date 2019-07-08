@@ -237,7 +237,7 @@ $(document).ready(function () {
 
         //If the game was any more extensive it'd be worth breaking the 
         //following if/else statements into a checkWin function
-        if (attackerHP <= 0 && $(".move").children().length == 0) {
+        if (attackerHP <= 0 && $(".move").children().length == 0) { //tie
 
             $(".restart").show();
 
@@ -249,7 +249,7 @@ $(document).ready(function () {
             $(".youDefeated").empty();
 
 
-            $(".winLose").html("You sever a few arms, but are killed in the process.");   
+            $(".winLose").html("Clearly you did not shoot first.");   
             
 
             $(".restart").click(function () {
@@ -258,7 +258,7 @@ $(document).ready(function () {
 
         }
 
-        else if ($(".move").children().length == 0) {
+        else if ($(".move").children().length == 0) { //win
 
             $(".youAttacked").empty();
             $(".attackedBack").empty();
@@ -266,7 +266,7 @@ $(document).ready(function () {
             $(".noEnemy").empty();
 
 
-            $(".winLose").html("The Force is With You!");
+            $(".winLose").html("The Force is With You, " + attackerFN);
 
 
 
@@ -279,7 +279,7 @@ $(document).ready(function () {
 
         }
 
-        else if (attackerHP <= 0) {
+        else if (attackerHP <= 0) { //lose
             $(".restart").show();
             $(".attackButton").hide();
 

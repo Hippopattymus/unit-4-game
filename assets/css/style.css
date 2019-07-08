@@ -1,3 +1,18 @@
-.p {
+
+
+p {
     font-family: 'Poller One', cursive;
+    font-size: 14px;
+}
+
+p .big {
+    font-size: 18px;
+}
+
+h1 {
+    font-family: 'Lekton', sans-serif;
+}
+
+.container {
+    background-color: white;
 }
